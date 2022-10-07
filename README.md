@@ -17,7 +17,7 @@ Take a sit, and get ready to have your HEAD rocked.
 - [ ] The client proposes a prompt (randomly drawn)
 - [ ] The player is then prompted with a series of yes/no questions or select multiple style questions, producing a hairstyle
 - [ ] Create an animation for when the client is waiting for their look: there will be some sort of hairspray/cloud covering her head
-- [ ] At the end, the client spins around to reveal the finished look
+- [ ] At the end, the client spins *around* to reveal the finished look
 - [ ] Import the hairstyles already drawn from the tabletop version, edit them with colors/accessories 
 - [ ] We will code each prompt card to have certain choices that are rewarded with points, other choices will diminish points 
 - [ ] Draw a client in Photoshop
