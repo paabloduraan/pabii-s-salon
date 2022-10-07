@@ -8,7 +8,7 @@ Take a sit, and get ready to have your HEAD rocked.
 
 ## TODO
 
-- [X] Import pics of hair as wigs 
+- [ ] Import pics of hair as wigs 
 - [ ] Import colors
 - [ ] Scoring system 
 - [ ] 0-5 stars based on if you pick hairstyles/colors/accessories that fit the description 
