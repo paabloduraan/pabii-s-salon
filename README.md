@@ -3,7 +3,7 @@ Take a sit, and get ready to have your HEAD rocked.
 
 # Table of Contents
 - [TODO](#TODO)
-- [Who's doing what](#Whos-Doing-What)
+- [Who's doing what](#Task_Track)
 - [Discuss](#Discuss)
 
 ## TODO
@@ -27,7 +27,7 @@ Take a sit, and get ready to have your HEAD rocked.
 - [ ] Paint bucket pouring color over hair
 
 
-## Whos-Doing-What
+## Task_Track
 Say on which task you are working on, so we do not end up working on the same task
 
 
