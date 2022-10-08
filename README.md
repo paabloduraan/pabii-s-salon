@@ -10,8 +10,8 @@ Take a sit, and get ready to have your HEAD rocked.
 
 - [ ] Import pics of hair as wigs 
 - [ ] Import colors
-- [Abby ] Scoring system 
-- [Abby ] 0-5 stars based on if you pick hairstyles/colors/accessories that fit the description 
+- [ ] WORK IN PROGRESS - Scoring system 
+- [ ] WORK IN PROGRESS - 0-5 stars based on if you pick hairstyles/colors/accessories that fit the description 
 - [ ] Card deck with prompts 
 - [ ] The player is the hairstylist
 - [ ] The client proposes a prompt (randomly drawn)
@@ -29,6 +29,10 @@ Take a sit, and get ready to have your HEAD rocked.
 
 ## TaskTracker
 Say on which task you are working on, so we do not end up working on the same task
+
+ABBY:
+Scoring System
+0-5 stars based on...
 
 
 ## DISCUSS
