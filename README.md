@@ -12,7 +12,6 @@ Take a sit, and get ready to have your HEAD rocked.
 - [ ] WORK IN PROGRESS - 0-5 stars based on if you pick hairstyles/colors/accessories that fit the description 
 - [ ] WORK IN PROGRESS - Create an animation for when the client is waiting for their look: there will be some sort of hairspray/cloud covering her head
 - [ ] WORK IN PROGRESS - Paint bucket pouring color over hair
-- [ ] WORK IN PROGRESS - Add background!
 - [ ] Import pics of hair as wigs 
 - [ ] Import colors
 - [ ] Card deck with prompts 
@@ -26,6 +25,7 @@ Take a sit, and get ready to have your HEAD rocked.
 - [ ] Animation of chair spinning around at end w client (finished look)
 - [ ] Animations/drawings needed: (SVG??)
 - [ ] scissors, dyes, paint brushes that the stylist holds/places them on the ‘cloud’,  any other styling supplies 
+- [X] Add background!
 
 
 
