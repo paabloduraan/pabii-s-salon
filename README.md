@@ -38,7 +38,6 @@ Abigail:
 - Paint bucket pouring color over hair
 
 Pablo:
-- Background
 - Animation for waiting
 
 
