@@ -1,5 +1,5 @@
 # Pabii's Salon!
-Take a sit, and get ready to have your HEAD rocked.
+Take a seat, and get ready to have your HEAD rocked.
 
 # Table of Contents
 - [TODO](#TODO)
