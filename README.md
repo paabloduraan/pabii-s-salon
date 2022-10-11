@@ -14,7 +14,7 @@ Take a seat, and get ready to have your HEAD rocked.
 - [ ] WORK IN PROGRESS - Paint bucket pouring color over hair
 - [ ] Import pics of hair as wigs 
 - [ ] Import colors
-- [ ] Card deck with prompts 
+- [ ] WORK IN PROGRESS - Card deck with prompts 
 - [ ] The player is the hairstylist
 - [ ] The client proposes a prompt (randomly drawn)
 - [ ] The player is then prompted with a series of yes/no questions or select multiple style questions, producing a hairstyle
@@ -43,6 +43,10 @@ Pablo:
 Ilona:
 - Client
 - Styling supplies
+
+Ivana:
+- Upload card deck with prompts
+- Code prompts to be associated with points
 
 
 
