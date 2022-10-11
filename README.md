@@ -40,6 +40,11 @@ Abigail:
 Pablo:
 - Animation for waiting
 
+Ilona:
+- Client
+- Styling supplies
+
+
 
 ## DISCUSS
 Here you can post questions we want to discuss with TAs or with ourselves
