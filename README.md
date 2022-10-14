@@ -19,7 +19,7 @@ Take a seat, and get ready to have your HEAD rocked.
 - [ ] The client proposes a prompt (randomly drawn)
 - [ ] The player is then prompted with a series of yes/no questions or select multiple style questions, producing a hairstyle
 - [ ] At the end, the client spins *around* to reveal the finished look
-- [ ] Import the hairstyles already drawn from the tabletop version, edit them with colors/accessories 
+- [ ] WORKD IN PROGRESS - Import the hairstyles already drawn from the tabletop version, edit them with colors/accessories 
 - [ ] We will code each prompt card to have certain choices that are rewarded with points, other choices will diminish points 
 - [ ] Draw a client in Photoshop
 - [ ] Animation of chair spinning around at end w client (finished look)
@@ -36,6 +36,7 @@ Abigail:
 - Scoring System DONE
 - 0-5 stars based on... - that's just the scoring system...
 - Paint bucket pouring color over hair, half done!
+- tag cards with scoring
 
 Pablo:
 - Animation for waiting
