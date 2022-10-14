@@ -33,9 +33,9 @@ Take a seat, and get ready to have your HEAD rocked.
 Say on which task you are working on, so we do not end up working on the same task
 
 Abigail:
-- Scoring System
-- 0-5 stars based on...
-- Paint bucket pouring color over hair
+- Scoring System DONE
+- 0-5 stars based on... - that's just the scoring system...
+- Paint bucket pouring color over hair, half done!
 
 Pablo:
 - Animation for waiting
