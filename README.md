@@ -48,6 +48,7 @@ Ilona:
 Ivana:
 - Upload card deck with prompts
 - Code prompts to be associated with points
+- Thought bubble animation 
 
 
 
