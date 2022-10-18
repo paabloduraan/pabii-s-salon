@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Questions.unity
     guid: 9d0a3b67b1e2644649ea9a94894478d5
+  - enabled: 1
+    path: Assets/Scenes/New_Salon.unity
+    guid: fdb3fe9185e3e41a5b02bff63c7a00f9
+  - enabled: 1
+    path: Assets/Scenes/StyleRoom.unity
+    guid: da500dfd725be40d69729c9af11efe0e
   m_configObjects: {}

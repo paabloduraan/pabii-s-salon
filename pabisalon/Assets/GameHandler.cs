@@ -12,7 +12,7 @@ public class GameHandler : MonoBehaviour {
       private string sceneName;
 
       public void StartGame() {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("New_Salon");
       }
       
       public void GameInfo() {
@@ -21,5 +21,9 @@ public class GameHandler : MonoBehaviour {
       
       public void Info2Start() {
             SceneManager.LoadScene("MainMenu");
+      }
+      
+      public void StyleMe() {
+            SceneManager.LoadScene("StyleRoom");
       }
 }
