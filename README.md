@@ -12,14 +12,14 @@ Take a seat, and get ready to have your HEAD rocked.
 - [ ] WORK IN PROGRESS - 0-5 stars based on if you pick hairstyles/colors/accessories that fit the description 
 - [ ] WORK IN PROGRESS - Create an animation for when the client is waiting for their look: there will be some sort of hairspray/cloud covering her head
 - [ ] WORK IN PROGRESS - Paint bucket pouring color over hair
-- [ ] Import pics of hair as wigs 
-- [ ] Import colors
+- [ ] WORK IN PROGRESS - The client proposes a prompt (randomly drawn)
+- [ ] WORK IN PROGRESS - Import colors 
+- [ ] WORKD IN PROGRESS - Import the hairstyles already drawn from the tabletop version, edit them with colors/accessories 
 - [ ] WORK IN PROGRESS - Card deck with prompts 
+- [ ] Import pics of hair as wigs 
 - [ ] The player is the hairstylist
-- [ ] The client proposes a prompt (randomly drawn)
 - [ ] The player is then prompted with a series of yes/no questions or select multiple style questions, producing a hairstyle
 - [ ] At the end, the client spins *around* to reveal the finished look
-- [ ] WORKD IN PROGRESS - Import the hairstyles already drawn from the tabletop version, edit them with colors/accessories 
 - [ ] We will code each prompt card to have certain choices that are rewarded with points, other choices will diminish points 
 - [ ] Draw a client in Photoshop
 - [ ] Animation of chair spinning around at end w client (finished look)
@@ -40,6 +40,8 @@ Abigail:
 
 Pablo:
 - Animation for waiting
+- Color change
+- Random Prompts
 
 Ilona:
 - Client
