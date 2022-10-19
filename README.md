@@ -41,7 +41,6 @@ Abigail:
 Pablo:
 - Animation for waiting
 - Color change
-- Random Prompts
 
 Ilona:
 - Client
