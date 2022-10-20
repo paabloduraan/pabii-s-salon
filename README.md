@@ -41,6 +41,7 @@ Abigail:
 Pablo:
 - Animation for waiting
 - Color change
+- Scroll bar
 
 Ilona:
 - Client
