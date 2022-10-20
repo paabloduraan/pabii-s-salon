@@ -523,7 +523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1014666286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1014666286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,3 +1652,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2116468254}
   m_CullTransparentMesh: 1
+--- !u!1001 &5341559164079359725
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 184.1531
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 104.54951
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.3527024
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2090409804679248193, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109707724650617901, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_Name
+      value: HairStyles
+      objectReference: {fileID: 0}
+    - target: {fileID: 7109707724650617901, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8cec0b6f175f94f0eb552ec2a1db8b0f, type: 3}

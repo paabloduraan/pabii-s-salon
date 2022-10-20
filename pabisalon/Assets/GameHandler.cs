@@ -26,4 +26,5 @@ public class GameHandler : MonoBehaviour {
       public void StyleMe() {
             SceneManager.LoadScene("StyleRoom");
       }
+      
 }
