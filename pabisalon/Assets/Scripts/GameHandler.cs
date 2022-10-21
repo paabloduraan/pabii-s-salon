@@ -20,6 +20,57 @@ public class GameHandler : MonoBehaviour {
 
       private string sceneName;
 
+//prompt variables
+	public static string currentPrompt;
+	public static int currentPromptNum;
+	public static int PromptNum1=100;
+	public static int PromptNum2=100;
+	public static int PromptNum3=100;
+	public GameObject promptDisplayText;
+	public GameObject promptDisplayBubble;
+	public string [] thePrompts = {
+			"I just got admitted to Tufts", 
+			"my quincenera is tomorrow", 
+			"I'm going to arkansas",
+			"I at a donut",
+			"Staying at home and crying"
+			};
+	
+	public static int currentHair;
+	public static Color currentHairColor = new Color(0,0,0,1);
+	
+	
+	public void Start(){
+		DisplayPrompt();
+		if (currentHair > 0){
+			DisplayCurrentHair();
+		}
+		
+	}
+
+	public void DisplayPrompt(){
+		Text displayPromptTextTemp = promptDisplayText.GetComponent<Text>();
+        displayPromptTextTemp.text = "" + currentPrompt;
+		if (displayPromptTextTemp.text == ""){
+			promptDisplayBubble.SetActive(false);
+		} else {promptDisplayBubble.SetActive(true);}
+	}
+	
+	//button function to get a new prompt
+	public void GimmePrompt(){
+		currentPromptNum = Random.Range(0, thePrompts.Length -1);
+		if ((currentPromptNum != PromptNum1)&&(currentPromptNum != PromptNum2)&&(currentPromptNum != PromptNum3)){
+			currentPrompt = thePrompts[currentPromptNum];
+			if (PromptNum1 == 100){PromptNum1 = currentPromptNum;}
+			else if (PromptNum2 == 100){PromptNum2 = currentPromptNum;}
+			else if (PromptNum3 == 100){PromptNum3 = currentPromptNum;}
+			else {Debug.Log("You only get three chance.");}
+		} else {
+			GimmePrompt();
+		}
+		DisplayPrompt();
+	}
+
       public void StartGame() {
             SceneManager.LoadScene("New_Salon");
       }
@@ -63,6 +114,18 @@ public class GameHandler : MonoBehaviour {
 
       }
 
+	public void DisplayCurrentHair(){
+		if (currentHair == 1){Puffs();}
+		else if (currentHair == 2){Braids();}
+		else if (currentHair == 3){Ponytails();}
+		else if (currentHair == 4){Straight();}
+		else if (currentHair == 5){Punk();}
+		else if (currentHair == 6){Mustache();}
+		else if (currentHair == 7){Puffs();}
+		else if (currentHair == 6){Natural();}
+		else if (currentHair == 7){Shaved();}
+	}
+
       public void AllFalse() {
           puffs.enabled = false;
           braids.enabled = false;
@@ -77,40 +140,49 @@ public class GameHandler : MonoBehaviour {
       public void Puffs() {
             AllFalse();
             puffs.enabled = !puffs.enabled;
+			puffs.color = currentHairColor;
+			currentHair = 1;
       }
 
       public void Braids() {
             AllFalse();
             braids.enabled = !braids.enabled;
+			currentHair = 2;
       }
 
       public void Ponytails() {
             AllFalse();
             ponytails.enabled = !ponytails.enabled;
+			currentHair = 3;
       }
 
       public void Straight() {
             AllFalse();
             straight.enabled = !straight.enabled;
+			currentHair = 4;
       }
 
       public void Punk() {
             AllFalse();
             punk.enabled = !punk.enabled;
+			currentHair = 5;
       }
 
       public void Mustache() {
             AllFalse();
             mustache.enabled = !mustache.enabled;
+			currentHair = 6;
       }
 
       public void Natural() {
             AllFalse();
             natural.enabled = !natural.enabled;
+			currentHair = 7;
       }
 
       public void Shaved() {
             AllFalse();
             shaved.enabled = !shaved.enabled;
+			currentHair = 8;
       }
 }
