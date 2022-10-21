@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 153146316}
   m_Layer: 5
   m_Name: braids
-  m_TagString: Untagged
+  m_TagString: braids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -741,7 +741,7 @@ GameObject:
   - component: {fileID: 257556998}
   m_Layer: 5
   m_Name: punk
-  m_TagString: Untagged
+  m_TagString: punk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 369487051}
   m_Layer: 5
   m_Name: ponytails
-  m_TagString: Untagged
+  m_TagString: ponytails
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2412,7 +2412,7 @@ GameObject:
   - component: {fileID: 925772401}
   m_Layer: 5
   m_Name: mustache
-  m_TagString: Untagged
+  m_TagString: mustache
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2839,7 +2839,7 @@ GameObject:
   - component: {fileID: 1048120241}
   m_Layer: 5
   m_Name: straight
-  m_TagString: Untagged
+  m_TagString: straight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3659,7 +3659,7 @@ GameObject:
   - component: {fileID: 1265871662}
   m_Layer: 5
   m_Name: shaved
-  m_TagString: Untagged
+  m_TagString: shaved
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5295,7 +5295,7 @@ GameObject:
   - component: {fileID: 1850851605}
   m_Layer: 5
   m_Name: natural
-  m_TagString: Untagged
+  m_TagString: natural
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6801,7 +6801,7 @@ GameObject:
   - component: {fileID: 2101941803}
   m_Layer: 5
   m_Name: puffs
-  m_TagString: Untagged
+  m_TagString: puffs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,7 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - test
+  - braids
+  - puffs
+  - ponytails
+  - straight
+  - punk
+  - mustache
+  - natural
+  - shaved
   layers:
   - Default
   - TransparentFX
