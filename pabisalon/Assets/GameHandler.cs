@@ -15,7 +15,8 @@ public class GameHandler : MonoBehaviour {
       public Image mustache;
       public Image natural;
       public Image shaved;
-      public GameObject myScrollRect;
+      public GameObject hairScroll;
+      public GameObject colorScroll;
 
       private string sceneName;
 
@@ -36,11 +37,28 @@ public class GameHandler : MonoBehaviour {
       }
 
       public void Hairstyle_Button() {
-          if (myScrollRect.activeSelf) {
-              myScrollRect.SetActive(false);
+          if (colorScroll.activeSelf) {
+              colorScroll.SetActive(false);
+          }
+
+          if (hairScroll.activeSelf) {
+              hairScroll.SetActive(false);
           }
           else {
-              myScrollRect.SetActive(true);
+              hairScroll.SetActive(true);
+          }
+      }
+
+      public void Color_Button() {
+          if (hairScroll.activeSelf) {
+              hairScroll.SetActive(false);
+          }
+
+          if (colorScroll.activeSelf) {
+              colorScroll.SetActive(false);
+          }
+          else {
+              colorScroll.SetActive(true);
           }
 
       }
