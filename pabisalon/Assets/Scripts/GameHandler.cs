@@ -17,8 +17,16 @@ public class GameHandler : MonoBehaviour {
       public Image shaved;
       public GameObject hairScroll;
       public GameObject colorScroll;
+	  //public GameObject accessoriesScroll;
+	  
+	public GameObject ButtonNewPrompt;
+	public GameObject ButtonStyleDone;
+	public bool hasHair = false;
+	public bool hasColor = false;
+	public bool hasAccessory = false;
 
       private string sceneName;
+	  
 
 //prompt variables
 	public static string currentPrompt;
@@ -34,10 +42,16 @@ public class GameHandler : MonoBehaviour {
 			"I'm going to arkansas",
 			"I at a donut",
 			"Staying at home and crying"
+			
 			};
 	
 	public static int currentHair;
 	public static Color currentHairColor = new Color(0,0,0,1);
+	
+	//score variables
+	public static int theScore = 0;
+	public static int theRound = 1;
+	public GameObject scoreDisplayText;
 	
 	
 	public void Start(){
@@ -45,8 +59,24 @@ public class GameHandler : MonoBehaviour {
 		if (currentHair > 0){
 			DisplayCurrentHair();
 		}
+		DisplayScore();
+	}
+
+	public void Update(){
+		
+		//if sceneName = styleme, if all 3 styles have been clicked, display done
+		if (SceneManager.GetActiveScene().name == "StyleRoom"){
+			//if ((hasHair)&&(hasColor)&&(hasAccessory)){
+			if ((hasHair)){
+				ButtonStyleDone.SetActive(true);
+			}
+			else{
+				ButtonStyleDone.SetActive(false);
+			}
+		}
 		
 	}
+
 
 	public void DisplayPrompt(){
 		Text displayPromptTextTemp = promptDisplayText.GetComponent<Text>();
@@ -70,6 +100,12 @@ public class GameHandler : MonoBehaviour {
 		}
 		DisplayPrompt();
 	}
+
+	public void DisplayScore(){
+		Text displayScoreTextTemp = scoreDisplayText.GetComponent<Text>();
+        displayScoreTextTemp.text = "ROUND: " + theRound + ", SCORE: " + theScore;
+	}
+
 
       public void StartGame() {
             SceneManager.LoadScene("New_Salon");
@@ -142,47 +178,55 @@ public class GameHandler : MonoBehaviour {
             puffs.enabled = !puffs.enabled;
 			puffs.color = currentHairColor;
 			currentHair = 1;
+			hasHair = true;
       }
 
       public void Braids() {
             AllFalse();
             braids.enabled = !braids.enabled;
 			currentHair = 2;
+			hasHair = true;
       }
 
       public void Ponytails() {
             AllFalse();
             ponytails.enabled = !ponytails.enabled;
 			currentHair = 3;
+			hasHair = true;
       }
 
       public void Straight() {
             AllFalse();
             straight.enabled = !straight.enabled;
 			currentHair = 4;
+			hasHair = true;
       }
 
       public void Punk() {
             AllFalse();
             punk.enabled = !punk.enabled;
 			currentHair = 5;
+			hasHair = true;
       }
 
       public void Mustache() {
             AllFalse();
             mustache.enabled = !mustache.enabled;
 			currentHair = 6;
+			hasHair = true;
       }
 
       public void Natural() {
             AllFalse();
             natural.enabled = !natural.enabled;
 			currentHair = 7;
+			hasHair = true;
       }
 
       public void Shaved() {
             AllFalse();
             shaved.enabled = !shaved.enabled;
 			currentHair = 8;
+			hasHair = true;
       }
 }
