@@ -12,6 +12,13 @@ TagManager:
   - mustache
   - natural
   - shaved
+  - test
+  - red
+  - blue
+  - green
+  - brown
+  - white
+  - black
   layers:
   - Default
   - TransparentFX
@@ -20,7 +27,7 @@ TagManager:
   - Water
   - UI
   - background
-  - 
+  - HairStyles
   - 
   - 
   - 

@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 8080439711363959393}
   - component: {fileID: 8080439711363959398}
   - component: {fileID: 8080439711363959399}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mustache_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 8080439711580543043}
   - component: {fileID: 8080439711580543040}
   - component: {fileID: 8080439711580543041}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: braids_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 8080439712086307974}
   - component: {fileID: 8080439712086307975}
   - component: {fileID: 8080439712086307972}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: punk_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 8080439712115198922}
   - component: {fileID: 8080439712115198923}
   - component: {fileID: 8080439712115198920}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: straight_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 8080439712344814203}
   - component: {fileID: 8080439712344814202}
   - component: {fileID: 8080439712344814197}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shaved_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 8080439712345207764}
   - component: {fileID: 8080439712345207765}
   - component: {fileID: 8080439712345207770}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: puffs_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 8080439712940604784}
   - component: {fileID: 8080439712940604785}
   - component: {fileID: 8080439712940604790}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: natural_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -819,7 +819,7 @@ GameObject:
   - component: {fileID: 8080439713320864251}
   - component: {fileID: 8080439713320864248}
   - component: {fileID: 8080439713320864249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ponytails_image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
