@@ -38,11 +38,31 @@ public class GameHandler : MonoBehaviour {
 	public GameObject promptDisplayBubble;
 	public string [] thePrompts = {
 			"I just got admitted to Tufts", 
-			"my quincenera is tomorrow", 
+			"my Quince˜nera is tomorrow", 
 			"I'm going to arkansas",
-			"I at a donut",
-			"Staying at home and crying"
-			
+			"I just broke up with my boyfriend",
+			"I have a job interview", 
+            "It's my wedding tomorrow",
+            "I'm trying to fit in with friends at Tufts",
+            "I need to yell at the manager for getting my order wrong",
+            "I just got dumped",
+            "My bachelorette party is tomorrow",
+            "I just got a job teaching at Tufts",
+            "I'm going to an Avril Lavigne concert tonight",
+            "I am going to court for a traffic violation tomorrow",
+            "I am starring on an episode of toddlers and tiaras tomorrow",
+            "I lasted 8 weeks on Survivor, the reality TV show",
+            "I have a movie casting in Los Angeles tomorrow",
+            "I am a Real Housewife of New Jersey",
+            "I just declared my major as CS",
+            "I am TikTok influencer with 22.3k followers",
+            "I just left the Mormon church",
+            "I am a transplant infuencer living in the East Village, NYC",
+            "I'm going to a rave tonight",
+            "I am meeting my boyfriend's rich parents tomorrow",
+            "I am an edm dj", "Im a tech bro in SF", 
+            "I am moving to a hippie commune",
+            "I'm getting coffe with my ex"			
 			};
 	
 	public static int currentHair;
