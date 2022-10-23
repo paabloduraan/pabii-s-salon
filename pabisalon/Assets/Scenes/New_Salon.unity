@@ -1008,6 +1008,70 @@ PrefabInstance:
       propertyPath: promptDisplayBubble
       value: 
       objectReference: {fileID: 2068336634}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[5]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[6]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[7]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[8]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[9]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[10]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[11]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[12]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[13]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[14]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[15]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[16]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[17]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[18]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: thePrompts.Array.data[19]
+      value: Staying at home and crying
+      objectReference: {fileID: 0}
     - target: {fileID: 8731060805511204516, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
       propertyPath: m_RootOrder
       value: 3

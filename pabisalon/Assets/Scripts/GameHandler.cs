@@ -21,9 +21,9 @@ public class GameHandler : MonoBehaviour {
 	  
 	public GameObject ButtonNewPrompt;
 	public GameObject ButtonStyleDone;
-	public bool hasHair = false;
-	public bool hasColor = false;
-	public bool hasAccessory = false;
+	private bool hasHair = false;
+	private bool hasColor = false;
+	private bool hasAccessory = false;
 
       private string sceneName;
 	  
@@ -36,7 +36,7 @@ public class GameHandler : MonoBehaviour {
 	public static int PromptNum3=100;
 	public GameObject promptDisplayText;
 	public GameObject promptDisplayBubble;
-	public string [] thePrompts = {
+	private string [] thePrompts = {
 			"I just got admitted to Tufts", 
 			"my Quince˜nera is tomorrow", 
 			"I'm going to arkansas",
@@ -60,13 +60,15 @@ public class GameHandler : MonoBehaviour {
             "I am a transplant infuencer living in the East Village, NYC",
             "I'm going to a rave tonight",
             "I am meeting my boyfriend's rich parents tomorrow",
-            "I am an edm dj", "Im a tech bro in SF", 
+            "I am an edm dj", 
+			"Im a tech bro in SF", 
             "I am moving to a hippie commune",
             "I'm getting coffe with my ex"			
 			};
 	
-	public static int currentHair;
+	public static int currentHair = 0;
 	public static Color currentHairColor = new Color(0,0,0,1);
+	public static int currentHairColorID = 0;
 	
 	//score variables
 	public static int theScore = 0;
@@ -171,6 +173,7 @@ public class GameHandler : MonoBehaviour {
       }
 
 	public void DisplayCurrentHair(){
+		AllColor();
 		if (currentHair == 1){Puffs();}
 		else if (currentHair == 2){Braids();}
 		else if (currentHair == 3){Ponytails();}
@@ -181,6 +184,8 @@ public class GameHandler : MonoBehaviour {
 		else if (currentHair == 6){Natural();}
 		else if (currentHair == 7){Shaved();}
 	}
+
+//hair style button functions
 
       public void AllFalse() {
           puffs.enabled = false;
@@ -196,7 +201,7 @@ public class GameHandler : MonoBehaviour {
       public void Puffs() {
             AllFalse();
             puffs.enabled = !puffs.enabled;
-			puffs.color = currentHairColor;
+			//puffs.color = currentHairColor;
 			currentHair = 1;
 			hasHair = true;
       }
@@ -204,6 +209,7 @@ public class GameHandler : MonoBehaviour {
       public void Braids() {
             AllFalse();
             braids.enabled = !braids.enabled;
+			//braids.color = currentHairColor;
 			currentHair = 2;
 			hasHair = true;
       }
@@ -211,6 +217,7 @@ public class GameHandler : MonoBehaviour {
       public void Ponytails() {
             AllFalse();
             ponytails.enabled = !ponytails.enabled;
+			//Ponytail.color = currentHairColor;
 			currentHair = 3;
 			hasHair = true;
       }
@@ -218,6 +225,7 @@ public class GameHandler : MonoBehaviour {
       public void Straight() {
             AllFalse();
             straight.enabled = !straight.enabled;
+			//Straight.color = currentHairColor;
 			currentHair = 4;
 			hasHair = true;
       }
@@ -225,6 +233,7 @@ public class GameHandler : MonoBehaviour {
       public void Punk() {
             AllFalse();
             punk.enabled = !punk.enabled;
+			//Punk.color = currentHairColor;
 			currentHair = 5;
 			hasHair = true;
       }
@@ -232,6 +241,7 @@ public class GameHandler : MonoBehaviour {
       public void Mustache() {
             AllFalse();
             mustache.enabled = !mustache.enabled;
+			//Mustache.color = currentHairColor;
 			currentHair = 6;
 			hasHair = true;
       }
@@ -239,6 +249,7 @@ public class GameHandler : MonoBehaviour {
       public void Natural() {
             AllFalse();
             natural.enabled = !natural.enabled;
+			//Natural.color = currentHairColor;
 			currentHair = 7;
 			hasHair = true;
       }
@@ -246,7 +257,76 @@ public class GameHandler : MonoBehaviour {
       public void Shaved() {
             AllFalse();
             shaved.enabled = !shaved.enabled;
+			//Shaved.color = currentHairColor;
 			currentHair = 8;
 			hasHair = true;
       }
+	  
+// hair color functions 
+      public void AllColor() {
+          puffs.color = currentHairColor;
+          braids.color = currentHairColor;
+          ponytails.color = currentHairColor;
+          straight.color = currentHairColor;
+          punk.color = currentHairColor;
+          mustache.color = currentHairColor;
+          natural.color = currentHairColor;
+          shaved.color = currentHairColor;
+      }
+
+
+	   public void ColorRed() {
+			//currentHairColor = new Color(2.3f,0.2f,0.2f,1f);
+			Color newColor = GameObject.FindWithTag("red").GetComponent<Image>().color;
+			currentHairColor = newColor;
+			AllColor();	
+			currentHairColorID = 1;
+			hasColor = true;
+      } 
+	  
+		public void ColorBlue() {
+			//currentHairColor = new Color(0.2f,0.4f,2.4f,1f);
+			Color newColor = GameObject.FindWithTag("blue").GetComponent<Image>().color;
+			currentHairColor = newColor;
+			AllColor();	
+			currentHairColorID = 2;
+			hasColor = true;
+      } 
+	  
+	  public void ColorGreen() {
+			//currentHairColor = new Color(0f,1.6f,0.2f,1f);
+			Color newColor = GameObject.FindWithTag("green").GetComponent<Image>().color;
+			currentHairColor = newColor;
+			AllColor();	
+			currentHairColorID = 3;
+			hasColor = true;
+      } 
+	  
+		public void ColorBrown() {
+			//currentHairColor = new Color(1f,0.7f,0.3f,1f);
+			Color newColor = GameObject.FindWithTag("brown").GetComponent<Image>().color;
+			currentHairColor = newColor;
+			AllColor();	
+			currentHairColorID = 4;
+			hasColor = true;
+      } 
+	  	  
+		public void ColorWhite() {
+			//currentHairColor = new Color(2.5f, 2.5f, 2.5f,1f);
+			Color newColor = GameObject.FindWithTag("white").GetComponent<Image>().color;
+			currentHairColor = newColor;
+			AllColor();	
+			currentHairColorID = 5;
+			hasColor = true;
+      } 
+	  
+		public void ColorBlack() {
+			//currentHairColor = new Color(0f,0f, 0f,1f);
+			Color newColor = GameObject.FindWithTag("black").GetComponent<Image>().color;
+			currentHairColor = newColor;
+			AllColor();	
+			currentHairColorID = 6;
+			hasColor = true;
+      } 
+	  
 }
