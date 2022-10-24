@@ -1172,6 +1172,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841811052}
   m_CullTransparentMesh: 1
+--- !u!114 &954727057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1307648187858745261, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+  m_PrefabInstance: {fileID: 1777422481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &954727058 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1155294783019827975, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+  m_PrefabInstance: {fileID: 1777422481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &954727059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 931648083393907038, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+  m_PrefabInstance: {fileID: 1777422481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1064186099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1511,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1777422486}
     - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: bangs
+      value: 
+      objectReference: {fileID: 954727058}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: pixie
+      value: 
+      objectReference: {fileID: 954727057}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
       propertyPath: puffs
       value: 
       objectReference: {fileID: 1777422490}
@@ -1493,6 +1534,10 @@ PrefabInstance:
       propertyPath: natural
       value: 
       objectReference: {fileID: 1777422484}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: messyBun
+      value: 
+      objectReference: {fileID: 954727059}
     - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
       propertyPath: mustache
       value: 
