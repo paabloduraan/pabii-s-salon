@@ -55,7 +55,7 @@ public class GameHandler : MonoBehaviour {
             "I have a movie casting in Los Angeles tomorrow",
             "I am a Real Housewife of New Jersey",
             "I just declared my major as CS",
-            "I am TikTok influencer with 22.3k followers",
+            "I am a TikTok influencer with 22.3k followers",
             "I just left the Mormon church",
             "I am a transplant infuencer living in the East Village, NYC",
             "I'm going to a rave tonight",
@@ -78,7 +78,7 @@ public class GameHandler : MonoBehaviour {
 	public static bool hasStyled = false; 
 	public static int theScore = 0;
 	public static int theRound = 1;
-	public int maxRound = 5;
+	public int maxRound = 3;
 	public static bool newRound = true;
 	public GameObject scoreDisplayText;
 	public bool endGame = false;
