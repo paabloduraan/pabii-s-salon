@@ -15,10 +15,14 @@ public class GameHandler : MonoBehaviour {
       public Image mustache;
       public Image natural;
       public Image shaved;
+      public Image messyBun;
+      public Image bangs;
+      public Image pixie;
+
       public GameObject hairScroll;
       public GameObject colorScroll;
 	  //public GameObject accessoriesScroll;
-	  
+
 	public GameObject ButtonNewPrompt;
 	public GameObject ButtonStyleDone;
 	private bool hasHair = false;
@@ -26,7 +30,7 @@ public class GameHandler : MonoBehaviour {
 	private bool hasAccessory = false;
 
       private string sceneName;
-	  
+
 
 //prompt variables
 	public static string currentPrompt;
@@ -37,11 +41,11 @@ public class GameHandler : MonoBehaviour {
 	public GameObject promptDisplayText;
 	public GameObject promptDisplayBubble;
 	private string [] thePrompts = {
-			"I just got admitted to Tufts", 
-			"my Quince˜nera is tomorrow", 
+			"I just got admitted to Tufts",
+			"my Quince˜nera is tomorrow",
 			"I'm going to arkansas",
 			"I just broke up with my boyfriend",
-			"I have a job interview", 
+			"I have a job interview",
             "It's my wedding tomorrow",
             "I'm trying to fit in with friends at Tufts",
             "I need to yell at the manager for getting my order wrong",
@@ -60,29 +64,29 @@ public class GameHandler : MonoBehaviour {
             "I am a transplant infuencer living in the East Village, NYC",
             "I'm going to a rave tonight",
             "I am meeting my boyfriend's rich parents tomorrow",
-            "I am an edm dj", 
-			"Im a tech bro in SF", 
+            "I am an edm dj",
+			"Im a tech bro in SF",
             "I am moving to a hippie commune",
-            "I'm getting coffe with my ex"			
+            "I'm getting coffe with my ex"
 			};
-	
+
 	//style variables
 	public static int currentHair = 0;
 	public static Color currentHairColor = new Color(0,0,0,1);
 	public static int currentHairColorID = 0;
 	public static int CurrentAccessory = 0;
-	
+
 	//score variables
 	public GameObject ScoreButton;
 	public GameObject GetEventButton;
-	public static bool hasStyled = false; 
+	public static bool hasStyled = false;
 	public static int theScore = 0;
 	public static int theRound = 1;
 	public int maxRound = 5;
 	public static bool newRound = true;
 	public GameObject scoreDisplayText;
 	public bool endGame = false;
-	
+
 	public void Start(){
 		DisplayPrompt();
 		DisplayScore();
@@ -101,7 +105,7 @@ public class GameHandler : MonoBehaviour {
 	}
 
 	public void Update(){
-		
+
 		//if sceneName = styleme, if all 3 styles have been clicked, display done
 		if (SceneManager.GetActiveScene().name == "StyleRoom"){
 			//if ((hasHair)&&(hasColor)&&(hasAccessory)){
@@ -112,7 +116,7 @@ public class GameHandler : MonoBehaviour {
 				ButtonStyleDone.SetActive(false);
 			}
 		}
-		
+
 		//endgame:
 		if (endGame){
 			//show final tally scripts go here
@@ -129,7 +133,7 @@ public class GameHandler : MonoBehaviour {
 			promptDisplayBubble.SetActive(false);
 		} else {promptDisplayBubble.SetActive(true);}
 	}
-	
+
 	//button function to get a new prompt
 	public void GimmePrompt(){
 		GetEventButton.SetActive(false);
@@ -207,6 +211,9 @@ public class GameHandler : MonoBehaviour {
 		else if (currentHair == 6){Mustache();}
 		else if (currentHair == 7){Natural();}
 		else if (currentHair == 8){Shaved();}
+        else if (currentHair == 9){MessyBun();}
+        else if (currentHair == 10){Bangs();}
+        else if (currentHair == 11){Pixie();}
 	}
 
 //hair style button functions
@@ -220,6 +227,9 @@ public class GameHandler : MonoBehaviour {
           mustache.enabled = false;
           natural.enabled = false;
           shaved.enabled = false;
+          messyBun.enabled = false;
+          bangs.enabled = false;
+          pixie.enabled = false;
       }
 
       public void Puffs() {
@@ -285,8 +295,32 @@ public class GameHandler : MonoBehaviour {
 			currentHair = 8;
 			hasHair = true;
       }
-	  
-// hair color functions 
+
+      public void MessyBun() {
+            AllFalse();
+            messyBun.enabled = !messyBun.enabled;
+			//messyBun.color = currentHairColor;
+			currentHair = 9;
+			hasHair = true;
+      }
+
+      public void Bangs() {
+            AllFalse();
+            bangs.enabled = !bangs.enabled;
+			//bangs.color = currentHairColor;
+			currentHair = 10;
+			hasHair = true;
+      }
+
+      public void Pixie() {
+            AllFalse();
+            pixie.enabled = !pixie.enabled;
+			//pixie.color = currentHairColor;
+			currentHair = 11;
+			hasHair = true;
+      }
+
+// hair color functions
       public void AllColor() {
           puffs.color = currentHairColor;
           braids.color = currentHairColor;
@@ -296,6 +330,9 @@ public class GameHandler : MonoBehaviour {
           mustache.color = currentHairColor;
           natural.color = currentHairColor;
           shaved.color = currentHairColor;
+          messyBun.color = currentHairColor;
+          bangs.color = currentHairColor;
+          pixie.color = currentHairColor;
       }
 
 
@@ -303,64 +340,64 @@ public class GameHandler : MonoBehaviour {
 			//currentHairColor = new Color(2.3f,0.2f,0.2f,1f);
 			Color newColor = GameObject.FindWithTag("red").GetComponent<Image>().color;
 			currentHairColor = newColor;
-			AllColor();	
+			AllColor();
 			currentHairColorID = 1;
 			hasColor = true;
-      } 
-	  
+      }
+
 		public void ColorBlue() {
 			//currentHairColor = new Color(0.2f,0.4f,2.4f,1f);
 			Color newColor = GameObject.FindWithTag("blue").GetComponent<Image>().color;
 			currentHairColor = newColor;
-			AllColor();	
+			AllColor();
 			currentHairColorID = 2;
 			hasColor = true;
-      } 
-	  
+      }
+
 	  public void ColorGreen() {
 			//currentHairColor = new Color(0f,1.6f,0.2f,1f);
 			Color newColor = GameObject.FindWithTag("green").GetComponent<Image>().color;
 			currentHairColor = newColor;
-			AllColor();	
+			AllColor();
 			currentHairColorID = 3;
 			hasColor = true;
-      } 
-	  
+      }
+
 		public void ColorBrown() {
 			//currentHairColor = new Color(1f,0.7f,0.3f,1f);
 			Color newColor = GameObject.FindWithTag("brown").GetComponent<Image>().color;
 			currentHairColor = newColor;
-			AllColor();	
+			AllColor();
 			currentHairColorID = 4;
 			hasColor = true;
-      } 
-	  	  
+      }
+
 		public void ColorWhite() {
 			//currentHairColor = new Color(2.5f, 2.5f, 2.5f,1f);
 			Color newColor = GameObject.FindWithTag("white").GetComponent<Image>().color;
 			currentHairColor = newColor;
-			AllColor();	
+			AllColor();
 			currentHairColorID = 5;
 			hasColor = true;
-      } 
-	  
+      }
+
 		public void ColorBlack() {
 			//currentHairColor = new Color(0f,0f, 0f,1f);
 			Color newColor = GameObject.FindWithTag("black").GetComponent<Image>().color;
 			currentHairColor = newColor;
-			AllColor();	
+			AllColor();
 			currentHairColorID = 6;
 			hasColor = true;
-      } 
-	  
-	  
+      }
+
+
 	  //Scoring Round System for 27 options
 	  public void Scoring(){
 			GetEventButton.SetActive(true);
 			ScoreButton.SetActive(false);
 			newRound = true;
 			theRound += 1;
-		  
+
 		//dialogue #1, placeholder results
 		if (currentPromptNum == 0){
 			//hairtest
@@ -371,7 +408,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #2, placeholder results
 		if (currentPromptNum == 1){
 			//hairtest
@@ -381,8 +418,8 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		}  
-		  
+		}
+
 		//dialogue #3, placeholder results
 		if (currentPromptNum == 2){
 			//hairtest
@@ -393,7 +430,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #4, placeholder results
 		if (currentPromptNum == 3){
 			//hairtest
@@ -403,9 +440,9 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		} 
+		}
 
-		  
+
 		//dialogue #5, placeholder results
 		if (currentPromptNum == 4){
 			//hairtest
@@ -416,7 +453,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #6, placeholder results
 		if (currentPromptNum == 5){
 			//hairtest
@@ -426,8 +463,8 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		}  
-		  
+		}
+
 		//dialogue #7, placeholder results
 		if (currentPromptNum == 6){
 			//hairtest
@@ -438,7 +475,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #8, placeholder results
 		if (currentPromptNum == 7){
 			//hairtest
@@ -448,7 +485,7 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		} 
+		}
 
 		//dialogue #9, placeholder results
 		if (currentPromptNum == 8){
@@ -460,7 +497,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #10, placeholder results
 		if (currentPromptNum == 7){
 			//hairtest
@@ -470,8 +507,8 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		}  
-		  
+		}
+
 		//dialogue #11, placeholder results
 		if (currentPromptNum == 10){
 			//hairtest
@@ -482,7 +519,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #12, placeholder results
 		if (currentPromptNum == 11){
 			//hairtest
@@ -492,9 +529,9 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		} 
+		}
 
-		  
+
 		//dialogue #13, placeholder results
 		if (currentPromptNum == 12){
 			//hairtest
@@ -505,7 +542,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #14, placeholder results
 		if (currentPromptNum == 13){
 			//hairtest
@@ -515,8 +552,8 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		}  
-		  
+		}
+
 		//dialogue #15, placeholder results
 		if (currentPromptNum == 14){
 			//hairtest
@@ -527,7 +564,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #16, placeholder results
 		if (currentPromptNum == 15){
 			//hairtest
@@ -537,7 +574,7 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		} 
+		}
 
 		//dialogue #17, placeholder results
 		if (currentPromptNum == 16){
@@ -549,7 +586,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #18, placeholder results
 		if (currentPromptNum == 17){
 			//hairtest
@@ -559,8 +596,8 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		}  
-		  
+		}
+
 		//dialogue #19, placeholder results
 		if (currentPromptNum == 18){
 			//hairtest
@@ -571,7 +608,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #20, placeholder results
 		if (currentPromptNum == 19){
 			//hairtest
@@ -581,9 +618,9 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		} 
+		}
 
-		  
+
 		//dialogue #21, placeholder results
 		if (currentPromptNum == 20){
 			//hairtest
@@ -594,7 +631,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #22, placeholder results
 		if (currentPromptNum == 21){
 			//hairtest
@@ -604,8 +641,8 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		}  
-		  
+		}
+
 		//dialogue #23, placeholder results
 		if (currentPromptNum == 22){
 			//hairtest
@@ -616,7 +653,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #24, placeholder results
 		if (currentPromptNum == 23){
 			//hairtest
@@ -626,7 +663,7 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		} 
+		}
 
 		//dialogue #25, placeholder results
 		if (currentPromptNum == 24){
@@ -637,8 +674,8 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		}  
-		  
+		}
+
 		//dialogue #26, placeholder results
 		if (currentPromptNum == 25){
 			//hairtest
@@ -649,7 +686,7 @@ public class GameHandler : MonoBehaviour {
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
-		  
+
 		//dialogue #27, placeholder results
 		if (currentPromptNum == 26){
 			//hairtest
@@ -659,9 +696,9 @@ public class GameHandler : MonoBehaviour {
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
-		} 
+		}
 
 	  }
-	  
-	  
+
+
 }
