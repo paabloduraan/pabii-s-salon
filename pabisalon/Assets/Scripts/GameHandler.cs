@@ -27,7 +27,7 @@ public class GameHandler : MonoBehaviour {
 	public GameObject ButtonStyleDone;
 	private bool hasHair = false;
 	private bool hasColor = false;
-	private bool hasAccessory = false;
+	// private bool hasAccessory = false;
 
       private string sceneName;
 
@@ -74,7 +74,7 @@ public class GameHandler : MonoBehaviour {
 	public static int currentHair = 0;
 	public static Color currentHairColor = new Color(0,0,0,1);
 	public static int currentHairColorID = 0;
-	public static int CurrentAccessory = 0;
+	// public static int CurrentAccessory = 0;
 
 	//score variables
 	public GameObject ScoreButton;
@@ -101,7 +101,7 @@ public class GameHandler : MonoBehaviour {
 		}
 		hasHair = false;
 		hasColor = false;
-		hasAccessory = false;
+		// hasAccessory = false;
 	}
 
 	public void Update(){
