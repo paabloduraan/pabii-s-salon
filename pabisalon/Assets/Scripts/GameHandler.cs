@@ -213,7 +213,7 @@ public class GameHandler : MonoBehaviour {
 			if (PromptNum1 == 100){PromptNum1 = currentPromptNum;}
 			else if (PromptNum2 == 100){PromptNum2 = currentPromptNum;}
 			else if (PromptNum3 == 100){PromptNum3 = currentPromptNum;}
-			else {Debug.Log("You only get three chance.");}
+			else {Debug.Log("You only get three chances.");}
 		} else {
 			GimmePrompt();
 		}
@@ -573,14 +573,15 @@ public class GameHandler : MonoBehaviour {
             //hairtest
 			if (currentHair == 9){
                 theScore +=1; Debug.Log("+1 for hair #" + currentHair);
-                theResponse = "Success! We add points for messy bun because Tufts students are busy and don't have time to do their hair!";
+                theResponse = "Success! We add points for messy bun because Tufts students are busy and don't have time to do their hair! Brown and blue get points too for Tufts pride!";
             }
 			//colortest
 			if ((currentHairColorID == 4)|| (currentHairColorID == 2)||(currentHairColorID == 8)){
                 theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);
-                theResponse = "Success! We add points for messy bun because Tufts students are busy and don't have time to do their hair!";
+                theResponse = "Success! We add points for messy bun because Tufts students are busy and don't have time to do their hair! Brown and blue get points too for Tufts pride!";
             }
-            else {theResponse = "The client did not like this hairstyle :(  We add points for messy bun because Tufts students are busy and don't have time to do their hair! No points awarded.";}
+            
+            else {theResponse = "The client did not like this hairstyle :(  We add points for messy bun because Tufts students are busy and don't have time to do their hair! Brown and blue get points too for Tufts pride! No points awarded.";}
             //EXPLANATION: we add points for messy bun because tufts students are busy and dont have time
             //to do their hair! points for brown and blue for tufts colors
 			//accessory test
@@ -615,12 +616,16 @@ public class GameHandler : MonoBehaviour {
             //hairtest
 			if ((currentHair == 4)||(currentHair == 2)||(currentHair == 1)){
                 theScore +=1; Debug.Log("+1 for hair #" + currentHair);
-                theResponse = "Success! For Arkansas, we wanted a hometown feel with simple styles and natural colors.";
+                theResponse = "Success! For Arkansas, we wanted a hometown feel with simple styles and natural colors with sweet, feminine accessories..";
             }
 			//colortest
 			if ((currentHairColorID == 4)||(currentHairColorID == 6)||(currentHairColorID == 7)||(currentHairColorID == 8)){
                 theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);
-                theResponse = "Success! For Arkansas, we wanted a hometown feel with simple styles and natural colors.";
+                theResponse = "Success! For Arkansas, we wanted a hometown feel with simple styles and natural colors with sweet, feminine accessories.";
+            }
+            if ((CurrentAccessory == 5) || (CurrentAccessory == 3)) {
+                theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);
+                theResponse = "Success! For Arkansas, we wanted a hometown feel with simple styles and natural colors with sweet, feminine accessories.";
             }
             else {theResponse = "The client did not like this hairstyle :( For Arkansas, we wanted a hometown feel with simple styles and natural colors. No points awarded.";}
             //explanation: for arkansas we wanted a hometown feel with simple styles and natural colors
@@ -635,15 +640,19 @@ public class GameHandler : MonoBehaviour {
             //hairtest
 			if ((currentHair == 2)||(currentHair == 7)){
                 theScore +=1; Debug.Log("+1 for hair #" + currentHair);
-                theResponse = "Just dumped him? No sweat off your back! Go for something elegant and beautiful, like braids or rock your natural texture!";
+                theResponse = "Just dumped him? No sweat off your back! Go for something elegant and beautiful, like braids or rock your natural texture! Accessorize with a headband to keep it simple but cute.";
             }
-
 			//colortest
 			if ((currentHairColorID == 4)||(currentHairColorID == 6)||(currentHairColorID == 7)){
                 theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);
-                theResponse = "Just dumped him? No sweat off your back! Go for something elegant and beautiful, like braids or rock your natural texture!";
+                theResponse = "Just dumped him? No sweat off your back! Go for something elegant and beautiful, like braids or rock your natural texture! Accessorize with a headband to keep it simple but cute.";
             }
-            else {theResponse = "The client did not like this hairstyle :( Since you just dumped him, go for something elegant and beautiful, like braids or rock your natural texture! No points awarded.";}
+            if (CurrentAccessory == 4) {
+                theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);
+                theResponse = "Just dumped him? No sweat off your back! Go for something elegant and beautiful, like braids or rock your natural texture! Accessorize with a headband to keep it simple but cute.";
+            }
+            
+            else {theResponse = "The client did not like this hairstyle :( Since you just dumped him, go for something elegant and beautiful, like braids or rock your natural texture!  Accessorize with a headband to keep it simple but cute. No points awarded.";}
             //eplanation: just dumped him? no sweat off your back! go for something elegant and beautiful, like
             // long braids or rock your natural texture!
 			//accessory test
@@ -665,7 +674,7 @@ public class GameHandler : MonoBehaviour {
                 theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);
                 theResponse = "Nice job! Job interviews require a professional, natural look.";
             }
-            else {theResponse = "The client did not like this hairstyle :( Job interviews require a professional, natural look. No points awarded.";}
+            else {theResponse = "The client did not like this hairstyle :( Job interviews require a professional, natural look. No accessories needed. No points awarded.";}
             //job interviews require a professional, natural look. we reccomend your hair out of your face and not too brightly colored
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
@@ -678,14 +687,18 @@ public class GameHandler : MonoBehaviour {
             //hairtest
 			if ((currentHair == 7)||(currentHair == 4)){
                 theScore +=1; Debug.Log("+1 for hair #" + currentHair);
-                theResponse = "Nice! For a wedding, we add points for natural styles and colors.";
+                theResponse = "Nice! For a wedding, we add points for natural styles and colors. We loved your flower crown accessory for a bridal look.";
             }
 			//colortest
 			if ((currentHairColorID == 4)||(currentHairColorID == 6)||(currentHairColorID == 7)||(currentHairColorID == 8)){
                 theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);
-                theResponse = "Nice! For a wedding, we add points for natural styles and colors.";
+                theResponse = "Nice! For a wedding, we add points for natural styles and colors. We loved your flower crown accessory for a bridal look.";
             }
-            else {theResponse = "The client did not like this hairstyle :( For a wedding, we add points for natural styles and colors. No points awarded.";}
+            if (CurrentAccessory == 3) {
+                theScore += 1; Debug.Log("+1 for accessory #" + CurrentAccessory);
+                theResponse = "Nice! For a wedding, we add points for natural styles and colors. We loved your flower crown accessory for a bridal look.";
+            }
+            else {theResponse = "The client did not like this hairstyle :( For a wedding, we add points for natural styles and colors, and a flower crown for a bridal look. No points awarded.";}
             //for a wedding we add points for natural styles in natural colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
