@@ -21,6 +21,7 @@ public class GameHandler : MonoBehaviour {
 
     public GameObject hairScroll;
     public GameObject colorScroll;
+    public GameObject accessoriesScroll;
 	  //public GameObject accessoriesScroll;
 
 	public GameObject ButtonNewPrompt;
@@ -243,6 +244,11 @@ public class GameHandler : MonoBehaviour {
           if (hairScroll.activeSelf) {
               hairScroll.SetActive(false);
           }
+
+          if (accessoriesScroll.activeSelf) {
+              accessoriesScroll.SetActive(false);
+          }
+
           else {
               hairScroll.SetActive(true);
           }
@@ -256,11 +262,35 @@ public class GameHandler : MonoBehaviour {
           if (colorScroll.activeSelf) {
               colorScroll.SetActive(false);
           }
+
+          if (accessoriesScroll.activeSelf) {
+              accessoriesScroll.SetActive(false);
+          }
+
           else {
               colorScroll.SetActive(true);
           }
+      }
+
+      public void Accessories_Button() {
+          if (hairScroll.activeSelf) {
+              hairScroll.SetActive(false);
+          }
+
+          if (colorScroll.activeSelf) {
+              colorScroll.SetActive(false);
+          }
+
+          if (accessoriesScroll.activeSelf) {
+              accessoriesScroll.SetActive(false);
+          }
+
+          else {
+              accessoriesScroll.SetActive(true);
+          }
 
       }
+
 
 	public void DisplayCurrentHair(){
 		AllColor();
@@ -451,7 +481,7 @@ public class GameHandler : MonoBehaviour {
 			currentHairColorID = 6;
 			hasColor = true;
       }
-      
+
       public void ColorYellow() {
            //currentHairColor = new Color(2.3f,0.2f,0.2f,1f);
            Color newColor = GameObject.FindWithTag("yellow").GetComponent<Image>().color;
@@ -460,7 +490,7 @@ public class GameHandler : MonoBehaviour {
            currentHairColorID = 7;
            hasColor = true;
      }
-     
+
      public void ColorOrange() {
           //currentHairColor = new Color(2.3f,0.2f,0.2f,1f);
           Color newColor = GameObject.FindWithTag("orange").GetComponent<Image>().color;

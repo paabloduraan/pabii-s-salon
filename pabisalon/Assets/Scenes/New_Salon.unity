@@ -1841,6 +1841,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1289650882}
     - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: accessoriesScroll
+      value: 
+      objectReference: {fileID: 1064186099}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
       propertyPath: promptDisplayText
       value: 
       objectReference: {fileID: 1868733520}
