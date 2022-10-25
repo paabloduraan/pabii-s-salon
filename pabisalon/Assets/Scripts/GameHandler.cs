@@ -41,10 +41,11 @@ public class GameHandler : MonoBehaviour {
 	public GameObject promptDisplayText;
 	public GameObject promptDisplayBubble;
     public GameObject promptDisplayExplanation;
+    // public GameOverScreen GameOverScreen;
 	private string [] thePrompts = {
 			"I just got admitted to Tufts", //0
 			"my Quinceñera is tomorrow", //1
-			"I'm going to arkansas", //2
+			"I'm going to Arkansas", //2
 			"I just broke up with my boyfriend", //3
 			"I have a job interview", //4
             "It's my wedding tomorrow", //5
@@ -84,15 +85,28 @@ public class GameHandler : MonoBehaviour {
 	public static int theScore = 0;
 	public static int theRound = 1;
     public static string theResponse = "";
-	public int maxRound = 5;
+	public int maxRound = 3;
 	public static bool newRound = true;
 	public GameObject scoreDisplayText;
 	public bool endGame = false;
+
+    //game over objects
+    public GameObject gameOverTitle;
+    public GameObject conditionsTitle;
+    public GameObject gameOverScreen;
+    public GameObject resetButton;
+    // public GameObject restartButton;
 
 	public void Start(){
 		DisplayPrompt();
 		DisplayScore();
         DisplayExplanation();
+
+        gameOverTitle.SetActive(false);
+        conditionsTitle.SetActive(false);
+        resetButton.SetActive(false);
+        gameOverScreen.SetActive(false);
+
 		if (currentHair > 0){DisplayCurrentHair();}
 		if (newRound){
 			GetEventButton.SetActive(true);
@@ -105,6 +119,7 @@ public class GameHandler : MonoBehaviour {
 		hasHair = false;
 		hasColor = false;
 		hasAccessory = false;
+
 	}
 
 	public void Update(){
@@ -122,7 +137,9 @@ public class GameHandler : MonoBehaviour {
 
 		//endgame:
 		if (endGame){
-			//show final tally scripts go here
+            GameOverScene();
+            // resetButton.SetActive(true);
+            // restartButton();
 			GetEventButton.SetActive(false);
 			ScoreButton.SetActive(false);
 		}
@@ -141,6 +158,39 @@ public class GameHandler : MonoBehaviour {
         promptDisplayExplanation.SetActive(true);
         Text displayExplanationTextTemp = promptDisplayExplanation.GetComponent<Text>();
         displayExplanationTextTemp.text = "" + theResponse;
+    }
+
+    // public void restartButton() {
+    //     gameOverScreen.SetActive(false);
+    //     gameOverTitle.SetActive(false);
+    //     conditionsTitle.SetActive(false);
+    //     theScore = 0;
+    //     theRound = 1;
+    //     theResponse = "";
+    //     newRound = true;
+    //     currentHairColorID = 0;
+    //     currentHair = 0;
+    //     endGame = false;
+    //     Start();
+    //
+    // }
+
+    public void GameOverScene() {
+        gameOverScreen.SetActive(true);
+        gameOverTitle.SetActive(true);
+        conditionsTitle.SetActive(true);
+        resetButton.SetActive(true);
+        Text gameOverTextTemp = conditionsTitle.GetComponent<Text>();
+        if (theScore > 4) {
+            gameOverTextTemp.text = "You scored over 4 points- You won!";
+            // restartButton();
+        } else {
+            gameOverTextTemp.text = "You did not get 4 points- You lost!";
+            // restartButton();
+        }
+        // restartButton();
+
+
     }
 
 
