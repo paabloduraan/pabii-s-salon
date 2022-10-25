@@ -18,6 +18,12 @@ public class GameHandler : MonoBehaviour {
     public Image messyBun;
     public Image bangs;
     public Image pixie;
+    
+    public Image feather;
+    public Image ears;
+    public Image flowers;
+    public Image headband;
+    public Image hair_bow;
 
     public GameObject hairScroll;
     public GameObject colorScroll;
@@ -109,6 +115,7 @@ public class GameHandler : MonoBehaviour {
         gameOverScreen.SetActive(false);
 
 		if (currentHair > 0){DisplayCurrentHair();}
+        if (CurrentAccessory > 0){DisplayCurrentAccesory();}
 		if (newRound){
 			GetEventButton.SetActive(true);
 			ScoreButton.SetActive(false);
@@ -411,6 +418,59 @@ public class GameHandler : MonoBehaviour {
 			currentHair = 11;
 			hasHair = true;
       }
+      
+//accessory button functions
+
+      public void AccesoriesFalse() {
+          feather.enabled = false;
+          ears.enabled = false;
+          flowers.enabled = false;
+          headband.enabled = false;
+          hair_bow.enabled = false;
+      }
+
+      public void put_feather() {
+            AccesoriesFalse();
+            feather.enabled = !feather.enabled;
+			CurrentAccessory = 1;
+			hasAccessory = true;
+      }
+      
+      public void put_ears() {
+            AccesoriesFalse();
+            ears.enabled = !ears.enabled;
+			CurrentAccessory = 2;
+			hasAccessory = true;
+      }
+      
+      public void put_flowers() {
+            AccesoriesFalse();
+            flowers.enabled = !flowers.enabled;
+			CurrentAccessory = 3;
+			hasAccessory = true;
+      }
+      
+      public void put_headband() {
+            AccesoriesFalse();
+            headband.enabled = !headband.enabled;
+			CurrentAccessory = 4;
+			hasAccessory = true;
+      }
+      
+      public void put_bow() {
+            AccesoriesFalse();
+            hair_bow.enabled = !hair_bow.enabled;
+			CurrentAccessory = 5;
+			hasAccessory = true;
+      }
+      
+      public void DisplayCurrentAccesory(){
+  		if (CurrentAccessory == 1){put_feather();}
+  		else if (CurrentAccessory == 2){put_ears();}
+  		else if (CurrentAccessory == 3){put_flowers();}
+        else if (CurrentAccessory == 4){put_headband();}
+        else if (CurrentAccessory == 5){put_bow();}
+  	}
 
 // hair color functions
       public void AllColor() {
