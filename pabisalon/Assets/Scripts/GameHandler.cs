@@ -42,33 +42,33 @@ public class GameHandler : MonoBehaviour {
 	public GameObject promptDisplayBubble;
     public GameObject promptDisplayExplanation;
 	private string [] thePrompts = {
-			"I just got admitted to Tufts",
-			"my Quinceñera is tomorrow",
-			"I'm going to arkansas",
-			"I just broke up with my boyfriend",
-			"I have a job interview",
-            "It's my wedding tomorrow",
-            "I'm trying to fit in with friends at Tufts",
-            "I need to yell at the manager for getting my order wrong",
-            "I just got dumped",
-            "My bachelorette party is tomorrow",
-            "I just got a job teaching at Tufts",
-            "I'm going to an Avril Lavigne concert tonight",
-            "I am going to court for a traffic violation tomorrow",
-            "I am starring on an episode of toddlers and tiaras tomorrow",
-            "I lasted 8 weeks on Survivor, the reality TV show",
-            "I have a movie casting in Los Angeles tomorrow",
-            "I am a Real Housewife of New Jersey",
-            "I just declared my major as CS",
-            "I am TikTok influencer with 22.3k followers",
-            "I just left the Mormon church",
-            "I am a transplant infuencer living in the East Village, NYC",
-            "I'm going to a rave tonight",
-            "I am meeting my boyfriend's rich parents tomorrow",
-            "I am an edm dj",
-			"Im a tech bro in SF",
-            "I am moving to a hippie commune",
-            "I'm getting coffe with my ex"
+			"I just got admitted to Tufts", //0
+			"my Quinceñera is tomorrow", //1
+			"I'm going to arkansas", //2
+			"I just broke up with my boyfriend", //3
+			"I have a job interview", //4
+            "It's my wedding tomorrow", //5
+            "I'm trying to fit in with friends at Tufts", //6
+            "I need to yell at the manager for getting my order wrong", //7
+            "I just got dumped", //8
+            "My bachelorette party is tomorrow", //9
+            "I just got a job teaching at Tufts", //10
+            "I am an edm dj", //11
+            "I'm going to an Avril Lavigne concert tonight", //12
+            "I am going to court for a traffic violation tomorrow", //13
+            "I am starring on an episode of toddlers and tiaras tomorrow", //14
+            "I lasted 8 weeks on Survivor, the reality TV show", //15
+            "I have a movie casting in Los Angeles tomorrow", //16
+            "I am a Real Housewife of New Jersey", //17
+            "I just declared my major as CS", //18
+            "I am TikTok influencer with 22.3k followers", //19
+            "I just left the Mormon church", //20
+            "I am a transplant infuencer living in the East Village, NYC", //21
+            "I'm going to a rave tonight", //22
+            "I am meeting my boyfriend's rich parents tomorrow", //23
+			"Im a tech bro in SF", //24
+            "I am moving to a hippie commune", //25
+            "I'm getting coffe with my ex" //26
 			};
 
 	//style variables
@@ -410,7 +410,7 @@ public class GameHandler : MonoBehaviour {
 			newRound = true;
 			theRound += 1;
 
-		//dialogue #1, placeholder results
+		//dialogue #1, placeholder results - admitted to tufts
 		if (currentPromptNum == 0){
             //hairtest
 			if (currentHair == 9){
@@ -432,7 +432,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #2, placeholder results
+		//dialogue #2, placeholder results -- quince
 		if (currentPromptNum == 1){
             //hairtest
 			if ((currentHair == 4)||(currentHair == 7)){
@@ -452,7 +452,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #3, placeholder results
+		//dialogue #3, placeholder results -- arkansas
 		if (currentPromptNum == 2){
             //hairtest
 			if ((currentHair == 4)||(currentHair == 2)||(currentHair == 1)){
@@ -472,7 +472,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #4, placeholder results
+		//dialogue #4, placeholder results -- broke up
 		if (currentPromptNum == 3){
             //hairtest
 			if ((currentHair == 2)||(currentHair == 7)){
@@ -495,7 +495,7 @@ public class GameHandler : MonoBehaviour {
 		}
 
 
-		//dialogue #5, placeholder results
+		//dialogue #5, placeholder results -- job interview
 		if (currentPromptNum == 4){
             //hairtest
 			if ((currentHair == 1)||(currentHair == 3)){
@@ -515,7 +515,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #6, placeholder results
+		//dialogue #6, placeholder results -- wedding
 		if (currentPromptNum == 5){
             //hairtest
 			if ((currentHair == 7)||(currentHair == 4)){
@@ -535,19 +535,19 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #7, placeholder results
+		//dialogue #7, placeholder results -- tufts
 		if (currentPromptNum == 6){
             //hairtest
 			if ((currentHair == 5)||(currentHair == 10)){
                 theScore +=1; Debug.Log("+1 for hair #" + currentHair);
-                theResponse = "Tufts students love to be crative! We reward bright colors and bold styles!";
+                theResponse = "Tufts students love to be creative! We reward bright colors and bold styles!";
             }
 			//colortest
 			if ((currentHairColorID == 1)||(currentHairColorID == 2) ||(currentHairColorID == 3)){
                 theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);
-                theResponse = "Tufts students love to be crative! We reward bright colors and bold styles!";
+                theResponse = "Tufts students love to be creative! We reward bright colors and bold styles!";
             }
-            else {theResponse = "The client did not like this hairstyle :( Tufts students love to be crative so we reward bright colors and bold styles! No points awared.";}
+            else {theResponse = "The client did not like this hairstyle :( Tufts students love to be creative so we reward bright colors and bold styles! No points awared.";}
             //tufts students love to be creative! we reward bright colors and bold styles, try something new like bangs!
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
@@ -555,7 +555,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #8, placeholder results
+		//dialogue #8, placeholder results -- karen
 		if (currentPromptNum == 7){
             //hairtest
 			if ((currentHair == 11)){
@@ -575,7 +575,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #9, placeholder results
+		//dialogue #9, placeholder results -- dumped
 		if (currentPromptNum == 8){
             //hairtest
             if ((currentHair == 5)||(currentHair == 8)){
@@ -596,7 +596,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-        //dialogue #10, placeholder results
+        //dialogue #10, placeholder results -- bach
 		if (currentPromptNum == 9){
 			//hairtest
 			if ((currentHair == 1)||(currentHair == 3)){
@@ -616,7 +616,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #11, placeholder results
+		//dialogue #11, placeholder results -- job at tufts
 		if (currentPromptNum == 10){
             //hairtest
 			if ((currentHair == 6)||(currentHair == 11)||(currentHair == 1)){
@@ -637,7 +637,7 @@ public class GameHandler : MonoBehaviour {
             DisplayExplanation();
 		}
 
-		//dialogue #12, placeholder results
+		//dialogue #12, placeholder results -- edm dj
 		if (currentPromptNum == 11){
             //hairtest
 			if ((currentHair == 3)||(currentHair == 1)){
@@ -659,7 +659,7 @@ public class GameHandler : MonoBehaviour {
 		}
 
 
-		//dialogue #13, placeholder results
+		//dialogue #13, placeholder results -- avril
 		if (currentPromptNum == 12){
             //hairtest
 			if ((currentHair == 5)||(currentHair == 4)){
@@ -681,7 +681,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #14, placeholder results
+		//dialogue #14, placeholder results -- traffic
 		if (currentPromptNum == 13){
             //hairtest
 			if ((currentHair == 6)||(currentHair == 3)||(currentHair == 1)){
@@ -702,7 +702,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #15, placeholder results
+		//dialogue #15, placeholder results -- toddlers
 		if (currentPromptNum == 14){
             //hairtest
 			if ((currentHair == 3)||(currentHair == 1)){
@@ -724,7 +724,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #16, placeholder results
+		//dialogue #16, placeholder results -- survivor
 		if (currentPromptNum == 15){
             //hairtest
 			if ((currentHair == 1)||(currentHair == 9)){
@@ -745,7 +745,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #17, placeholder results
+		//dialogue #17, placeholder results -- la
 		if (currentPromptNum == 16){
             //hairtest
 			if ((currentHair == 7)||(currentHair == 4)){
@@ -766,7 +766,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #18, placeholder results
+		//dialogue #18, placeholder results - nj
 		if (currentPromptNum == 17){
             //hairtest
 			if ((currentHair == 7)||(currentHair == 4)||(currentHair == 11)){
@@ -789,7 +789,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #19, placeholder results
+		//dialogue #19, placeholder results -- cs
 		if (currentPromptNum == 18){
             //hairtest
 			if ((currentHair == 3)||(currentHair == 9)){
@@ -810,7 +810,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #20, placeholder results
+		//dialogue #20, placeholder results -- tiktok
 		if (currentPromptNum == 19){
             //hairtest
 			if ((currentHair == 7)||(currentHair == 4)){
@@ -832,7 +832,7 @@ public class GameHandler : MonoBehaviour {
 		}
 
 
-		//dialogue #21, placeholder results
+		//dialogue #21, placeholder results -- mormon church
 		if (currentPromptNum == 20){
             //hairtest
 			if ((currentHair == 2)||(currentHair == 10)){
@@ -853,7 +853,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #22, placeholder results
+		//dialogue #22, placeholder results -- influencer
 		if (currentPromptNum == 21){
             //hairtest
 			if ((currentHair == 5)||(currentHair == 10)){
@@ -874,7 +874,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #23, placeholder results
+		//dialogue #23, placeholder results -- rave
 		if (currentPromptNum == 22){
             //hairtest
 			if ((currentHair == 5)||(currentHair == 8)){
@@ -897,7 +897,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #24, placeholder results
+		//dialogue #24, placeholder results -- boyfriends parents
 		if (currentPromptNum == 23){
             //hairtest
 			if ((currentHair == 2)||(currentHair == 4)||(currentHair == 7)){
@@ -920,7 +920,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #25, placeholder results
+		//dialogue #25, placeholder results -- tech bro
 		if (currentPromptNum == 24){
             //hairtest
 			if ((currentHair == 6)||(currentHair == 8)){
@@ -942,7 +942,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #26, placeholder results
+		//dialogue #26, placeholder results -- hippie commune
 		if (currentPromptNum == 25){
             //hairtest
 			if ((currentHair == 7)||(currentHair == 4)){
@@ -963,7 +963,7 @@ public class GameHandler : MonoBehaviour {
 
 		}
 
-		//dialogue #27, placeholder results
+		//dialogue #27, placeholder results -- coffee
 		if (currentPromptNum == 26){
             //hairtest
 			if ((currentHair == 10)||(currentHair == 3)){
