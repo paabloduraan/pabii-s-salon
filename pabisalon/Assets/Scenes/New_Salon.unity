@@ -1992,6 +1992,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 298314271}
     m_Modifications:
+    - target: {fileID: 1155294783019827975, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98a8c99e746cd4b7a9e3123335c4993d, type: 3}
     - target: {fileID: 8080439711785567404, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
       propertyPath: m_Name
       value: Image_character
