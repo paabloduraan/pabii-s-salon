@@ -18,7 +18,7 @@ public class GameHandler : MonoBehaviour {
     public Image messyBun;
     public Image bangs;
     public Image pixie;
-    
+
     public Image feather;
     public Image ears;
     public Image flowers;
@@ -168,20 +168,20 @@ public class GameHandler : MonoBehaviour {
         displayExplanationTextTemp.text = "" + theResponse;
     }
 
-    // public void restartButton() {
-    //     gameOverScreen.SetActive(false);
-    //     gameOverTitle.SetActive(false);
-    //     conditionsTitle.SetActive(false);
-    //     theScore = 0;
-    //     theRound = 1;
-    //     theResponse = "";
-    //     newRound = true;
-    //     currentHairColorID = 0;
-    //     currentHair = 0;
-    //     endGame = false;
-    //     Start();
-    //
-    // }
+    public void restartButton() {
+        gameOverScreen.SetActive(false);
+        gameOverTitle.SetActive(false);
+        conditionsTitle.SetActive(false);
+        theScore = 0;
+        theRound = 1;
+        theResponse = "";
+        newRound = true;
+        currentHairColorID = 0;
+        currentHair = 0;
+        endGame = false;
+        Start();
+
+    }
 
     public void GameOverScene() {
         gameOverScreen.SetActive(true);
@@ -418,7 +418,7 @@ public class GameHandler : MonoBehaviour {
 			currentHair = 11;
 			hasHair = true;
       }
-      
+
 //accessory button functions
 
       public void AccesoriesFalse() {
@@ -435,35 +435,35 @@ public class GameHandler : MonoBehaviour {
 			CurrentAccessory = 1;
 			hasAccessory = true;
       }
-      
+
       public void put_ears() {
             AccesoriesFalse();
             ears.enabled = !ears.enabled;
 			CurrentAccessory = 2;
 			hasAccessory = true;
       }
-      
+
       public void put_flowers() {
             AccesoriesFalse();
             flowers.enabled = !flowers.enabled;
 			CurrentAccessory = 3;
 			hasAccessory = true;
       }
-      
+
       public void put_headband() {
             AccesoriesFalse();
             headband.enabled = !headband.enabled;
 			CurrentAccessory = 4;
 			hasAccessory = true;
       }
-      
+
       public void put_bow() {
             AccesoriesFalse();
             hair_bow.enabled = !hair_bow.enabled;
 			CurrentAccessory = 5;
 			hasAccessory = true;
       }
-      
+
       public void DisplayCurrentAccesory(){
   		if (CurrentAccessory == 1){put_feather();}
   		else if (CurrentAccessory == 2){put_ears();}
@@ -580,7 +580,7 @@ public class GameHandler : MonoBehaviour {
                 theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);
                 theResponse = "Success! We add points for messy bun because Tufts students are busy and don't have time to do their hair! Brown and blue get points too for Tufts pride!";
             }
-            
+
             else {theResponse = "The client did not like this hairstyle :(  We add points for messy bun because Tufts students are busy and don't have time to do their hair! Brown and blue get points too for Tufts pride! No points awarded.";}
             //EXPLANATION: we add points for messy bun because tufts students are busy and dont have time
             //to do their hair! points for brown and blue for tufts colors
@@ -655,7 +655,7 @@ public class GameHandler : MonoBehaviour {
                 theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);
                 theResponse = "Just dumped him? No sweat off your back! Go for something elegant and beautiful, like braids or rock your natural texture! Accessorize with a headband to keep it simple but cute.";
             }
-            
+
             else {theResponse = "The client did not like this hairstyle :( Since you just dumped him, go for something elegant and beautiful, like braids or rock your natural texture!  Accessorize with a headband to keep it simple but cute. No points awarded.";}
             //eplanation: just dumped him? no sweat off your back! go for something elegant and beautiful, like
             // long braids or rock your natural texture!
@@ -993,7 +993,7 @@ public class GameHandler : MonoBehaviour {
                 theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);
                 theResponse = "The Real Housewives keep it classy, but we know there are some Karen's in the mix...";
             }
-            
+
             else {theResponse = "The client did not like this hairstyle :( The Real Housewives keep it classy, but we know there are some Karen's in the mix... Go for either hair down or a pixie cut with a headband. No points awarded.";}
 
             //the real Housevies keep it classy, but we know there are some Karen's in the mix...
