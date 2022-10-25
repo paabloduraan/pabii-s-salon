@@ -82,7 +82,7 @@ public class GameHandler : MonoBehaviour {
 	public static bool hasStyled = false;
 	public static int theScore = 0;
 	public static int theRound = 1;
-	public int maxRound = 5;
+	private int maxRound = 3;
 	public static bool newRound = true;
 	public GameObject scoreDisplayText;
 	public bool endGame = false;
