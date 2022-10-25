@@ -5401,7 +5401,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c8262eec2a52496096144a0d99b4d8c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9e3b6ecbb614a4c3098a98f4f71f4a78, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7716,6 +7716,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 109085531}
     m_Modifications:
+    - target: {fileID: 1155294783019827975, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e3b6ecbb614a4c3098a98f4f71f4a78, type: 3}
+    - target: {fileID: 1155294783019827975, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155294783019827975, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155294783019827975, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8080439711785567404, guid: f6df1837bb0689742bade4896180cfd9, type: 3}
       propertyPath: m_Name
       value: Image_character
