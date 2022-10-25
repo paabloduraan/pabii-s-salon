@@ -2045,7 +2045,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 790457341}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: put_headband
+        m_MethodName: put_bow
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
