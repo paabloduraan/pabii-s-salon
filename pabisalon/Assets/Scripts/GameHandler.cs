@@ -191,7 +191,7 @@ public class GameHandler : MonoBehaviour {
         conditionsTitle.SetActive(true);
         resetButton.SetActive(true);
         Text gameOverTextTemp = conditionsTitle.GetComponent<Text>();
-        if (theScore > 4) {
+        if (theScore >= 4) {
             gameOverTextTemp.text = "You scored over 4 points- You won!";
             // restartButton();
         } else {
