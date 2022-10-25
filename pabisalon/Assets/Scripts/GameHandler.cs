@@ -43,7 +43,7 @@ public class GameHandler : MonoBehaviour {
     public GameObject promptDisplayExplanation;
 	private string [] thePrompts = {
 			"I just got admitted to Tufts",
-			"my Quince˜nera is tomorrow",
+			"my Quinceñera is tomorrow",
 			"I'm going to arkansas",
 			"I just broke up with my boyfriend",
 			"I have a job interview",
