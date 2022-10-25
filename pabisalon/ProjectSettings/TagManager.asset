@@ -19,6 +19,8 @@ TagManager:
   - brown
   - white
   - black
+  - yellow
+  - orange
   layers:
   - Default
   - TransparentFX
