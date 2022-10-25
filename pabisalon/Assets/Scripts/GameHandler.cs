@@ -302,6 +302,7 @@ public class GameHandler : MonoBehaviour {
 			//messyBun.color = currentHairColor;
 			currentHair = 9;
 			hasHair = true;
+
       }
 
       public void Bangs() {
@@ -400,10 +401,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #1, placeholder results
 		if (currentPromptNum == 0){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if (currentHair == 9){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)|| (currentHairColorID == 2)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //EXPLANATION: we add points for messy bun because tufts students are busy and dont have time
+            //to do their hair! points for brown and blue for tufts colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -411,10 +414,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #2, placeholder results
 		if (currentPromptNum == 1){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 4)||(currentHair == 7)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //explanation: for quincenera we add points for natural hair styles with natural colors, such as brown and black
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -422,10 +426,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #3, placeholder results
 		if (currentPromptNum == 2){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 4)||(currentHair == 2)||(currentHair == 1)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //explanation: for arkansas we wanted a hometown feel with simple styles and natural colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -433,10 +438,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #4, placeholder results
 		if (currentPromptNum == 3){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 2)||(currentHair == 7)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //eplanation: just dumped him? no sweat off your back! go for something elegant and beautiful, like
+            // long braids or rock your natural texture!
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -445,10 +452,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #5, placeholder results
 		if (currentPromptNum == 4){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //job interviews require a professional, natural look. we reccomend your hair out of your face and not too brightly colored
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -456,10 +464,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #6, placeholder results
 		if (currentPromptNum == 5){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 7)||(currentHair == 4)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //for a wedding we add points for natural styles in natural colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -467,10 +476,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #7, placeholder results
 		if (currentPromptNum == 6){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 5)||(currentHair == 10)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 1)||(currentHairColorID == 2) ||(currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //tufts students love to be creative! we reward bright colors and bold styles, try something new like bangs!
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -478,10 +488,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #8, placeholder results
 		if (currentPromptNum == 7){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 11)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //yelling at the manager? there's only one hairstyle we can think of
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -489,21 +500,24 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #9, placeholder results
 		if (currentPromptNum == 8){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
-			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+            //hairtest
+            if ((currentHair == 5)||(currentHair == 8)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
+            //colortest
+            if ((currentHairColorID == 1)||(currentHairColorID == 2) ||(currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //eplanation: just got dumped? switch it up with an edgy, colorful look!
+
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
 		}
 
-		//dialogue #10, placeholder results
-		if (currentPromptNum == 7){
+        //dialogue #10, placeholder results
+		if (currentPromptNum == 9){
 			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 2)||(currentHairColorID == 1)||(currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //bachelorette parties call for some spunk! go for a cool updo and a fun color to celebrate!
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -511,10 +525,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #11, placeholder results
 		if (currentPromptNum == 10){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 6)||(currentHair == 11)||(currentHair == 1)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 2)||(currentHairColorID == 4)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            // a new job requires a professional look, but you still gotta rep those tufts colors!
+            // try a short hair style in brown or blue!
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -522,10 +538,13 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #12, placeholder results
 		if (currentPromptNum == 11){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 3)||(currentHair == 1)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+            if ((currentHairColorID == 3)||(currentHairColorID == 5)||(currentHairColorID == 2)||(currentHairColorID == 1)){
+                theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+
+            //an edm DJ needs to be bold! go for a fun updo and a bold color
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -534,10 +553,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #13, placeholder results
 		if (currentPromptNum == 12){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 5)||(currentHair == 4)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 1)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //an avril concert calls for nothing less than the boldest!
+            //her signature red highlights should influence your look
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -545,10 +566,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #14, placeholder results
 		if (currentPromptNum == 13){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 6)||(currentHair == 3)||(currentHair == 1)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //going to court needs something professional and subtle. try an updo or short hair with natural colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -556,10 +578,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #15, placeholder results
 		if (currentPromptNum == 14){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 3)||(currentHair == 1)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //toddlers and tiaras needs some drama! go for a dramatic updo but keep the colors natural
+            //for that pageant girl look
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -567,10 +591,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #16, placeholder results
 		if (currentPromptNum == 15){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 1)||(currentHair == 9)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //just got back from survivor? we are assuming your hair is probably just thrown into a bun and you didn't dye it
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -578,10 +603,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #17, placeholder results
 		if (currentPromptNum == 16){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 7)||(currentHair == 4)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            // a movie casting in LA is all about the glamour! keep the hair down and elegant with a natural color
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -589,10 +615,13 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #18, placeholder results
 		if (currentPromptNum == 17){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 7)||(currentHair == 4)||(currentHair == 11)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+
+            //the real Housevies keep it classy, but we know there are some Karen's in the mix...
+            //opt for hair staying down rather than up and some natural colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -600,10 +629,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #19, placeholder results
 		if (currentPromptNum == 18){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 3)||(currentHair == 9)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            // cs majors are always on the go! opt for hair up with natural colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -611,10 +641,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #20, placeholder results
 		if (currentPromptNum == 19){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 7)||(currentHair == 4)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 3)||(currentHairColorID == 5)||(currentHairColorID == 2)||(currentHairColorID == 1)){
+                theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //the influencer life is glamourous! keep your hair down but go for a fun color to engage your audience
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -623,10 +655,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #21, placeholder results
 		if (currentPromptNum == 20){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 2)||(currentHair == 10)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //the mormons like to keep it modest. go for somehting reserved in color and style
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -634,10 +667,13 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #22, placeholder results
 		if (currentPromptNum == 21){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 5)||(currentHair == 10)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+            if ((currentHairColorID == 3)||(currentHairColorID == 5)||(currentHairColorID == 2)||(currentHairColorID == 1)){
+                theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+
+            //go for something bold and spunky to capture your audience's attention
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -645,10 +681,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #23, placeholder results
 		if (currentPromptNum == 22){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 5)||(currentHair == 8)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+            if ((currentHairColorID == 3)||(currentHairColorID == 5)||(currentHairColorID == 2)||(currentHairColorID == 1)){
+                theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //at a rave you gotta bring the spunk! gor for somethinge edgy with a bold color
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -656,10 +694,13 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #24, placeholder results
 		if (currentPromptNum == 23){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 2)||(currentHair == 4)||(currentHair == 7)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //your boyfriend's parents are probably hoping to see something
+            //wholesome and sweet. stick to a wholesome feel with some long
+            //braids or just hair down and a natural color
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -667,10 +708,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #25, placeholder results
 		if (currentPromptNum == 24){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 6)||(currentHair == 8)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //tech bros in SF have a signature look, nothing too out of the box
+            //stick to shorter hair and neutral colors
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -678,10 +721,11 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #26, placeholder results
 		if (currentPromptNum == 25){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 7)||(currentHair == 4)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //hippies are all about freedom! let your hair down and stick to a natural color for that earthy look
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
@@ -689,10 +733,12 @@ public class GameHandler : MonoBehaviour {
 
 		//dialogue #27, placeholder results
 		if (currentPromptNum == 26){
-			//hairtest
-			if ((currentHair == 1)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);} else {theScore -=1;}
+            //hairtest
+			if ((currentHair == 10)||(currentHair == 3)){theScore +=1; Debug.Log("+1 for hair #" + currentHair);}
 			//colortest
-			if ((currentHairColorID == 3)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);} else {theScore -=1;}
+			if ((currentHairColorID == 4)||(currentHairColorID == 6)){theScore +=1; Debug.Log("+1 for color #" + currentHairColorID);}
+            //coffee with an ex? go for something that will make you feel confident
+            //like some bold bangs or some cute ponytails! a natural color will work great
 			//accessory test
 			//if ((CurrentAccessory==1)||(CurrentAccessory==2)){theScore +=1; Debug.Log("+1 for accessory #" + CurrentAccessory);} else {theScore -=1;}
 			DisplayScore();
