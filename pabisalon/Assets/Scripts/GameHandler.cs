@@ -48,6 +48,7 @@ public class GameHandler : MonoBehaviour {
 	public GameObject promptDisplayText;
 	public GameObject promptDisplayBubble;
     public GameObject promptDisplayExplanation;
+    public GameObject boxExplanation;
     // public GameOverScreen GameOverScreen;
 	private string [] thePrompts = {
 			"I just got admitted to Tufts", //0
@@ -107,7 +108,7 @@ public class GameHandler : MonoBehaviour {
 	public void Start(){
 		DisplayPrompt();
 		DisplayScore();
-        DisplayExplanation();
+        // DisplayExplanation();
 
         gameOverTitle.SetActive(false);
         conditionsTitle.SetActive(false);
@@ -164,6 +165,7 @@ public class GameHandler : MonoBehaviour {
 
     public void DisplayExplanation() {
         promptDisplayExplanation.SetActive(true);
+        boxExplanation.SetActive(true);
         Text displayExplanationTextTemp = promptDisplayExplanation.GetComponent<Text>();
         displayExplanationTextTemp.text = "" + theResponse;
     }

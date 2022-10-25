@@ -3222,6 +3222,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 708517144}
     - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
+      propertyPath: boxExplanation
+      value: 
+      objectReference: {fileID: 708517144}
+    - target: {fileID: 3974129429364693968, guid: b147b1529ad8a4536a2914819b11e41e, type: 3}
       propertyPath: gameOverScreen
       value: 
       objectReference: {fileID: 240280208}
